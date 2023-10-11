@@ -5,7 +5,7 @@ const fetchNews = async (category?: Category | string, keywords?: string, isDyna
     //GraphQL query
     const query = gql`
         query myQuery($access_key: String! $categories: String! $keywords: String) {
-        myQuery(access_key: $access_key categories: $categories countries: "ru" sort:"published_desc" keywords: $keywords) {
+        myQuery(access_key: $access_key categories: $categories countries: "ar" sort:"published_desc" keywords: $keywords) {
         data {
                 author 
                 category
